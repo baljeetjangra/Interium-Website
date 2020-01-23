@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+/************************************Navbar*************************************************/
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  align-items: center;
+  padding: 0 1em 0 5em;
+  color: #343434;
+}
+#logo {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.5rem;
+  position: relative;
+  z-index: 1;
+}
+#logo::before {
+  content: "";
+  position: absolute;
+  width: 1.2em;
+  height: 1.1em;
+  top: 0.1em;
+  left: -0.2em;
+  background-color: #ffd451;
+  z-index: -1;
+}
+#nav-link {
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+  list-style: none;
+}
+.nav-links {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  text-decoration: none;
+  color: #343434;
+}
+
+/**********************************************************banner******************************************/
+#banner {
+  background: url("images/interiorback.JPG") no-repeat;
+  background-position: left;
+  height: 90vh;
+  background-size: 72%;
+  background-position-x: 0.4em;
+  text-align: right;
+  padding: 4em 5.1em 0 0;
+}
+h1 {
+  font-family: "Crimson Text", serif;
+  color: #343434;
+  font-weight: normal;
+  font-size: 4.3rem;
+  line-height: 1.1em;
+}
+
+h1 span {
+  display: block;
+}
+
+#banner p {
+  letter-spacing: 5.8px;
+  text-transform: uppercase;
+  padding: 2em 0;
+}
+
+#banner a {
+  text-decoration: none;
+  color: #343434;
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+  position: relative;
+}
+
+#banner a::before {
+  content: "";
+  position: absolute;
+  width: 6.5em;
+  height: 2px;
+  background-color: #d5b641;
+  top: 2em;
+}
