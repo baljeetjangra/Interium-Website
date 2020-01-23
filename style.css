@@ -10,7 +10,7 @@ body {
 #navbar {
   display: flex;
   justify-content: space-between;
-  height: 10vh;
+  height: 15vh;
   align-items: center;
   padding: 0 1em 0 5em;
   color: #343434;
@@ -49,11 +49,11 @@ body {
 #banner {
   background: url("images/interiorback.JPG") no-repeat;
   background-position: left;
-  height: 90vh;
+  height: 85vh;
   background-size: 72%;
   background-position-x: 0.4em;
   text-align: right;
-  padding: 4em 5.1em 0 0;
+  padding: 6em 7.1em 0 0;
 }
 h1 {
   font-family: "Crimson Text", serif;
@@ -88,4 +88,27 @@ h1 span {
   height: 2px;
   background-color: #d5b641;
   top: 2em;
+}
+/***************************************About us*******************************************/
+#about-us {
+  display: flex;
+  margin: 3em auto auto 2em;
+  color: #343434;
+}
+#about-des {
+  width: 90%;
+}
+#about-des p:first-child {
+  color: #d5b641;
+}
+#about-des p:last-child {
+  line-height: 2em;
+  letter-spacing: 3px;
+}
+#about-img img {
+  width: 100%;
+}
+
+h2 span {
+  display: block;
 }
