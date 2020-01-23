@@ -14,6 +14,10 @@ body {
   align-items: center;
   padding: 0 1em 0 5em;
   color: #343434;
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+  background-color: white;
 }
 #logo {
   font-family: "Dancing Script", cursive;
@@ -36,6 +40,7 @@ body {
   justify-content: space-around;
   width: 35%;
   list-style: none;
+  position: relative;
 }
 .nav-links {
   font-family: "Roboto", sans-serif;
@@ -50,10 +55,10 @@ body {
   background: url("images/interiorback.JPG") no-repeat;
   background-position: left;
   height: 85vh;
-  background-size: 72%;
+  background-size: 72vw;
   background-position-x: 0.4em;
   text-align: right;
-  padding: 6em 7.1em 0 0;
+  padding: 6em 6.5em 0 0;
 }
 h1 {
   font-family: "Crimson Text", serif;
@@ -111,4 +116,71 @@ h1 span {
 
 h2 span {
   display: block;
+}
+#burger {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  #nav-link {
+    width: 45%;
+  }
+}
+
+/******************************ipad***************************/
+
+@media screen and (max-width: 768px) {
+  #nav-link {
+    width: 70%;
+  }
+  #banner {
+    background-size: 100%;
+    padding: 3em 1em;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  #banner p {
+    letter-spacing: 3px;
+  }
+  #about-us {
+    display: block;
+    margin: 2em;
+  }
+  #about-des {
+    margin: 1em 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #nav-link {
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    right: 0;
+    top: 15vh;
+    height: 80vh;
+    background-color: #ffd451;
+    width: 50%;
+    overflow-x: hidden;
+    transform: translateX(100%);
+  }
+  .nav-links {
+    color: rgb(70, 69, 69);
+  }
+  #logo {
+    margin: 0 auto;
+  }
+  #burger {
+    display: block;
+    cursor: pointer;
+  }
+  #burger span {
+    display: block;
+    width: 1.6em;
+    height: 0.3em;
+    background-color: #d5b641;
+    margin: 0.2em 0;
+    border-radius: 0.2em;
+  }
 }
