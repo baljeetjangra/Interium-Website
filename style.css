@@ -54,7 +54,8 @@ body {
 #banner {
   background: url("images/interiorback.JPG") no-repeat;
   background-position: left;
-  height: 85vh;
+  /* background-size: 110%; */
+  height: 85vmin;
   background-size: 72vw;
   background-position-x: 0.4em;
   text-align: right;
