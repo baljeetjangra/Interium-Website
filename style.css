@@ -54,13 +54,13 @@ body {
 #banner {
   background: url("images/interiorback.JPG") no-repeat;
   background-position: left;
-  /* background-size: 110%; */
-  height: 85vmin;
+  height: 85vh;
   background-size: 72vw;
   background-position-x: 0.4em;
   text-align: right;
   padding: 6em 6.5em 0 0;
 }
+
 h1 {
   font-family: "Crimson Text", serif;
   color: #343434;
@@ -183,18 +183,23 @@ h2 span {
   }
   #banner {
     background-color: #d1d2d4;
-    background-position: 0;
-    background-size: 100vh 100vw;
-    height: 90vh;
+    background-size: cover;
+    background-position: center center;
     padding: 0;
     text-align: center;
   }
   h1 {
     font-size: 3rem;
-    padding: 50% 0 0 0;
+    color: #fff;
+    text-shadow: 1px 1px 2px #666;
+    padding: 1em 0;
+  }
+  #banner p {
+    text-shadow: 1px 1px 2px #fff;
   }
   #banner a {
     display: block;
+    color: black;
     margin-top: 6em;
   }
   .burger {
